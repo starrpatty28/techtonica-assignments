@@ -1,0 +1,9 @@
+# Project Secrets
+.my-secret-keys
+
+# Project-generated files
+node_modules
+Package-lock.json
+
+# Locally-generated files
+.DS_Store
