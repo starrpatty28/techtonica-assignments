@@ -1,13 +1,21 @@
 p {
-    color: black;
+    color: black
+  
 }
 
 body {
     background-color: #4EFF33;
 }
 
-h2 {
-    color:#2824BD 
+h1 {
+    color:#2824BD;
+    font-family: 'Luckiest Guy', cursive;;
 
+}
+
+h2 {
+    color:#2824BD;
+    font-family: 'Luckiest Guy', cursive;;
+ 
 }
 
