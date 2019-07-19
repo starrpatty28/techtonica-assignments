@@ -14,3 +14,9 @@ img {
         background-color: blue;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: green;
+    }
+}
