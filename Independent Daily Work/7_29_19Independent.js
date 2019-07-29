@@ -174,7 +174,7 @@ for(let i = 0; i < arrAY.length; i++) {
                                 console.log(counter);
                             }
 
-//  1. Write a for loop that iterates through our vacationSpots array using i as the iterator variable. Inside the block of the for loop, use console.log() to log each element in the vacationSpots array after the string 'I would love to visit '. For example, the first round of the loop should print 'I would love to visit Bali' to the console.                   
+//  3. Write a for loop that iterates through our vacationSpots array using i as the iterator variable. Inside the block of the for loop, use console.log() to log each element in the vacationSpots array after the string 'I would love to visit '. For example, the first round of the loop should print 'I would love to visit Bali' to the console.                   
 
                 const vacationSpots = ['Bali', 'Paris', 'Tulum'];
 
@@ -182,3 +182,38 @@ for(let i = 0; i < arrAY.length; i++) {
                 console.log('I would love to visit ' + vacationSpots[i]);
                 }
                                     
+// 1. Imagine you’re a big-wig programmer for a social media platform! You have been tasked with building a prototype for a mutual followers program. You’ll need two arrays of “friends” from two mock users so that you can extract the names of the followers who exist in both lists. Make a variable called bobsFollowers and set it equal to an array with four strings representing the names of Bob’s friends. 
+
+            var bobsFollowers = ['Alicia', 'Shay', 'Michael', 'Kim'];
+
+// 2. Make a variable called tinasFollowers and set it equal to an array with three strings representing the names of Tina’s friends. Make exactly two of these the same as two of the friends in the bobsFollowers array.
+
+            var tinasFollowers = ['Alicia', 'Shay', 'Tasha'];
+
+// 3. Create a third variable named mutualFollowers and set it to an empty array.
+                var mutualFollowers = []; 
+
+//  4. Create a nested loop that iterates through bobsFollowers as the array for the outer loop, and tinasFollowers as the array for the inner array. If the current element from the outer loop is the same as the current element from the inner loop, push that element into the mutualFollowers array.
+
+                 for (let i = 0; i < bobsFollowers.length; i++) {
+                     for (let j = 0; j < tinasFollowers.length; j++) {
+                        if (bobsFollowers[i] === tinasFollowers[j]) {
+                            mutualFollowers.push(bobsFollowers[i]);
+                        }
+                     }
+                }
+
+
+
+//While Loop CodeAcademy
+
+                 const cards = ['diamond', 'spade', 'heart', 'club'];
+
+                let currentCard 
+                
+                while (currentCard !== 'spade') {
+                 currentCard = cards[Math.floor(Math.random() * 4)]; 
+                  console.log(currentCard);
+                }
+ 
+                
