@@ -64,9 +64,12 @@ for (let i = 0; i < states.length; i++) {
   console.log('I love ' + states[i]);
 }
 
-//i starts at 0; As long as i is (lessthan) states length run the loop; each time looped add 1 to it (were indexing into States with i = so MD will be 0, VA will be 1, CA will be 2)
+//i starts at 0; As long as i is (lessthan) states length run the loop; each time looped add 1 to it (were indexing into States with i = so MD will be 0, VA will be 1, CA will be 2
 
-    ****************************************************************************
+
+ // ***************************************************************************
+
+
 
 //FreeCode Camp Example
 // for ([initialization], [condition], [final expression])
@@ -107,7 +110,12 @@ console.log(ourArray);
 var arrAY = [
     [1,2], [3,4], [5,6], [7,8]
 ];
-for(let i = 0; i < arrAY.length; i++) {   //the length of the array is 3
+
+//loop through each item in the outer array
+
+for(let i = 0; i < arrAY.length; i++) { 
+    //loop through each sub-array
+
     for(let j = 0; j < arrAY[i].length; j++) {
         console.log([i][j]);
     }
@@ -120,5 +128,31 @@ for(let i = 0; i < arrAY.length; i++) {   //the length of the array is 3
                                     // 6
                                     // 7
                                     // 8
-                                    
+
 //We have an array and inside the array we have 3 other arrays. In the first for loop the index represents the arrays inside the main array, so it would be [1,2]=0, [3,4]=1, [5,6]=3, [7,8]=4, Next were going to go inside each (small) array index, while j[i] is less than the length of the whole array(Big) its going to console each number. Now were going to console.log each item in the first array. The 1st Forloop got me the length and the second forloop got me the number
+//its going to do the first for loop first then go inside the first sub array, then return back up to the first for loop and move to the next Sub array, then retur back up etc
+
+// ****************************************************************************
+
+//While Loops
+
+//when we want to execute code while something is true, must increment (+) and decrement(-) a variable in the chunk of code that get executed each time the loops runs
+        //Otherwise we get stuck in an infinent loop
+
+                        let myArray = [];
+                        let i = 0;
+                        while (i <5) {
+                            myArray.push();
+                            i++
+                        }
+                        console.log(myArray);
+
+//I create an empty array called 'myArray', then I cretae an variable [initialization], then I create my whileloop with the [condition] inside and will run while the condition is true and stop when false, then I am pushing i(number) back into the array, then right under the condition is the [final expression] and will be adding 1 each time i. The we print the whole array after the while loop has been ran.
+        //if I didnt have my final expression [i++] then i would always be zero and it will keep ruuning and become an infinate loop
+
+                        var age = 5;
+
+                        while(age < 10) {
+                             console.log('Your age is less than 10');
+                         }
+                          console.log('You are now over 10');;
