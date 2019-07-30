@@ -93,6 +93,33 @@ switch(myCar) {
                     } 
                     calculate(20, '%', 10);
 
+//Next I have to turn my 'if else' statement into a Switch Statement
+
+                function calculate(num1,operator,num2) {
+
+                    switch(operator) {
+                            case '+':
+                            console.log(eval(num1+operator+num2));
+                            break;
+                
+                            case '-':
+                            console.log(eval(num1+operator+num2));
+                            break; 
+                
+                            case '*':
+                            console.log(eval(num1+operator+num2));
+                            break; 
+                
+                            case '/':
+                            console.log(eval(num1+operator+num2));
+                            break;
+                
+                            default: 
+                            console.log('Use another operator');
+                    }
+                }
+                calculate(3, '+', 7);
+
 
 
 
