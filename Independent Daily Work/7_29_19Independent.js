@@ -215,5 +215,48 @@ for(let i = 0; i < arrAY.length; i++) {
                  currentCard = cards[Math.floor(Math.random() * 4)]; 
                   console.log(currentCard);
                 }
- 
-                
+
+
+//A do...while statement says to do a task once, and then keep doing it until a specified condition is no longer met
+
+
+//Independance Practice
+
+// Techtonica staff will assign pairs.
+
+// Open REPL.it.
+
+// Activity 1 - Vacation Time!
+
+// Write a function called printVacations whose input is an array of arrays. Each sub-array should have two strings as elements: The 0th element should be a person's name and the 1st element should be that person's most desired vacation destination. Include a minimum of 3 sub-arrays in your input array, like so:
+
+// [ ['Tammy', 'Tahiti'], ['Erin', 'Banff, Alberta, Canada'], ['Janet', 'London'] ]
+
+// Your function should print each person's name and desired destination in a complete sentence, like this:
+
+// Tammy really wants to go to Tahiti.
+// Erin really wants to go to Banff, Alberta, Canada.
+// Janet really wants to go to London.
+
+    function printVacations (arrays) {
+
+        for (let i = 0; i < arrays.length; i++) {
+            console.log(arrays[i][0] + ' really wants to go to ' + arrays[i][1]);
+        }
+        } 
+        printVacations([ ['Tammy', 'Tahiti'], ['Erin', 'Banff, Alberta, Canada'], ['Janet', 'London'] ]);
+  
+  
+  
+  //My function is taking an arrays
+  //My function is spitting out a sentence with the array index
+  
+  //Game Plan
+  //Create the function to accept an array
+  // Create a Forloop to go through the array length
+  //console.log the sentence
+    //how to get the names and states by themselves
+  
+        //[i] gives me the first array going through the loop
+        //[0] gives me the index which is the names
+  //At the end it gives me the array and index of 1 which is the states
