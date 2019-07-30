@@ -1,7 +1,8 @@
 //Independent Work for 7/24/19
 
 function calculate(num1,operator,num2){      //function taking in 3 arguments 
-    var equation = '';                       //empty variable
+    var equation = '';  
+                         //empty variable
      equation = eval(num1+operator+num2);    //variable = eval(evaluates if its a string)
      return equation                         //return the equation variable 
     
