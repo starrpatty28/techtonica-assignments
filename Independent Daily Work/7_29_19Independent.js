@@ -260,3 +260,43 @@ for(let i = 0; i < arrAY.length; i++) {
         //[i] gives me the first array going through the loop
         //[0] gives me the index which is the names
   //At the end it gives me the array and index of 1 which is the states
+
+
+   // ****************************************************************************
+
+// Activity 2 - Vacation Choices
+
+// Follow the prompt for Activity #1, but use this format for the input array instead:
+
+[ ['Tammy', ['Tahiti', 'Bali', 'Hawaii']], ['Erin', ['Banff, Alberta, Canada', 'Iceland']], ['Janet', ['London', 'Hogwarts']] ]
+
+// The output should look similar to this:
+
+// Tammy is willing to go to Tahiti, Bali or Hawaii.
+// Erin is willing to go to Banff, Alberta, Canada or Iceland.
+// Janet is willing to go to London or Hogwarts.
+
+function printVacations (arrays) {
+
+    for (let i = 0; i < arrays.length; i++) {
+      for (let j = 0; j < arrays.length; j++) 
+        
+        console.log(arrays[i][0] + ' is willing to go ' + arrays[i][1]);
+      }
+    } 
+    printVacations([ ['Tammy', ['Tahiti', 'Bali', 'Hawaii']], ['Erin', ['Banff, Alberta, Canada', 'Iceland']], ['Janet', ['London', 'Hogwarts']] ])
+  
+  
+  //Follow the prompt for Activity #1, but use this format for the input array instead:
+  
+  // [ ['Tammy', ['Tahiti', 'Bali', 'Hawaii']], ['Erin', ['Banff, Alberta, Canada', 'Iceland']], ['Janet', ['London', 'Hogwarts']] ]
+  
+  // The output should look similar to this:
+  
+  // Tammy is willing to go to Tahiti, Bali or Hawaii.
+  // Erin is willing to go to Banff, Alberta, Canada or Iceland.
+  // Janet is willing to go to London or Hogwarts. 
+  
+  //another for loop and a if else statement
+  
+  //will go over tomorrow
