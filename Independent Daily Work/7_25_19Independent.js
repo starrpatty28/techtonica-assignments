@@ -95,6 +95,7 @@ function movieNight (names) {    // create an function that accepts an array
     
     if (names.includes('David')) {       
       attending.push('David');
+      
       console.log(attending);
     } 
     

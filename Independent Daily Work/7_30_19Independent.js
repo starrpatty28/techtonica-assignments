@@ -55,6 +55,8 @@ switch(myCar) {
         console.log('You need to get a new car');
 }
 
+
+
 // Independent Practice
 
 // Techtonica staff will assign pairs.
@@ -95,32 +97,122 @@ switch(myCar) {
 
 //Next I have to turn my 'if else' statement into a Switch Statement
 
-                function calculate(num1,operator,num2) {
+function calculate(num1,operator,num2) {
 
-                    switch(operator) {
-                            case '+':
-                            console.log(eval(num1+operator+num2));
-                            break;
-                
-                            case '-':
-                            console.log(eval(num1+operator+num2));
-                            break; 
-                
-                            case '*':
-                            console.log(eval(num1+operator+num2));
-                            break; 
-                
-                            case '/':
-                            console.log(eval(num1+operator+num2));
-                            break;
-                
-                            default: 
-                            console.log('Use another operator');
-                    }
-                }
-                calculate(3, '+', 7);
+  switch(operator) {
+          case '+':
+          console.log(eval(num1+operator+num2));
+          break;
+
+          case '-':
+          console.log(eval(num1+operator+num2));
+          break; 
+
+          case '*':
+          console.log(eval(num1+operator+num2));
+          break; 
+
+          case '/':
+          console.log(eval(num1+operator+num2));
+          break;
+
+          default: 
+          console.log('Use another operator');
+    }
+}
+calculate(3, '+', 7);
 
 
+// Challenge
+
+// Refer back to the movie night activity from the JavaScript 3 lesson. Refactor your code to replace your if/else statement(s) with switch statement(s).
+
+//This was my orginal function
+
+function movieNight (names) {    // create an function that accepts an array
+    let attending =[];          // a place where the attendee will go
+    
+    //if David is in the name array, add David to the attending array
+    
+    if (names.includes('David')) {       
+      attending.push('David');
+      
+      console.log(attending);
+    } 
+    
+    //If Alex is in the name array and if David is in the attaending, add Alex to the attending array 
+    
+    if (names.includes('Alex') && attending.includes('David')) {
+        attending.push('Alex');
+        console.log(attending);
+    }
+    //if Ming is in the names array and if Priya is in the name array and David is NOT in the names/attending array, add Ming to the attending party
+    
+    if (names.includes('Ming') && names.includes('Priya') && attending.includes('David') === false) {
+        attending.push('Ming');
+        console.log(attending);
+    }
+    
+    //if priya is in names array, and ming is in the attending array, add priya to the attending array
+    
+    if (names.includes('Priya') && attending.includes('Ming')) {
+        attending.push('Priya');
+        console.log(attending);
+    }
+    
+    //if Breanna is in the names array, and if there are 2 or more items in the attaending array, add Breana to the attending array
+    
+    if (names.includes('Breanna') && attending.length >= 2) {
+        attending.push('Breanna');
+        console.log(attending);
+    }
+    
+      return attending;
+    }
+    
+    //movieNight(['David','Alex']); //expect ['David', 'Alex']
+    //movieNight(['Ming','Priya', 'Alex']); //expect ['Ming','Priya']
+    //movieNight(['Ming','Breanna', 'Alex']); //expeect []
+    //movieNight(['Ming','Priya', 'David']); //expect ['David']
+    //movieNight(['David','Alex', 'Breanna']); //expect ['David', 'Alex', Breanna]
+    
+//This is my Switch Statement of the function
+
+function movieNight(names) {
+
+    let attending = [];
+  
+    switch (true) {
+  
+        case names.includes('David'):
+        attending.push('David');
+        console.log(attending);
+        
+  
+        case names.includes('Alex') && names.includes('David'):
+        attending.push('Alex');
+        console.log(attending);
+        
+  
+        case names.includes('Ming') && names.includes('Priya') && attending.includes('David') === false:
+        attending.push('Ming', 'Priya');
+        console.log(attending);
+        
+  
+        case names.includes('Breanna') && attending.length >= 2:
+        attending.push('Breanna');
+        console.log(attending);
+        break;
+  
+        default:
+        console.log('No one is going to the movies');
+    }
+}  
+//movieNight(['David']);  //expect ['David']
+//movieNight(['David','Alex']); //expect ['David', 'Alex']
+//movieNight(['Ming','Priya', 'Alex']); //expect ['Ming','Priya']
+//movieNight(['David','Alex', 'Breanna']); //expect ['David', 'Alex', Breanna]
+movieNight(['Alicia', 'Jen', 'Mega']);
 
 
 
