@@ -1,3 +1,66 @@
+//Intro to Testing
+
+//Software Testing: the process of executing a program application with the intent of finding software bugs
+    //Testing protects against future problems, living documentation, forced you to think about if a user tries to abouse the software
+//Different Test
+    //Unit Testing=>Integrating Testing=>System Testing=>Acceptance Testing
+
+//Unit Test: can test a single function
+//Integration Test: Various pieces of code working together (many units at once), does the unit test still past when different functions are working together (3 functions)
+
+//System Test: The process of testing an integrated system ti verify it meets specified requirements (if a bunch of functions combined together in order to work as one)
+
+//Acceptance Test: Usses the product like the users would, evualating the compliance, does it meet the clients expectations fir userability.
+
+//First I started with a simple 
+
+                    var sum = function(a) {
+                    
+                        return a;
+                    };
+                    sum(1);
+
+//Then I added different things to make the function bigger
+
+                    var sum = function(a,b) {
+                        if(a === 5 && b === 10) {
+                        return a + b;
+                        }
+                    };
+                    sum(5,10);
+
+//Then I added a different sum to see if the function will past and it didnt, the reason was the if statement. I then commented out my
+
+                var sum = function(a,b) {
+                    if(a === 5 && b === 10) {
+                    return " a + b, Great Job!"
+                    } else {
+                    return "Please enter 5 and 10 only."
+                    }
+                 };
+                sum('hello', 'world');
+                sum(5,10;)
+
+                
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // [Challenge 1] - Convert Inches to Meters
 // Define a function called metersToInches that takes an input of the number of meters and outputs the result of the number of inches.
 
