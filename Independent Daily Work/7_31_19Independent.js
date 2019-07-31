@@ -41,25 +41,6 @@
                 sum('hello', 'world');
                 sum(5,10;)
 
-                
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // [Challenge 1] - Convert Inches to Meters
 // Define a function called metersToInches that takes an input of the number of meters and outputs the result of the number of inches.
@@ -79,26 +60,50 @@
 
 //Game plan
 //Create a function that takes in integers
-//Create variables (with the conversion) to convert your numbers to inches
-//create another varaible that contains the conversion with the message
-//console.log your answer
+//Create a variable (with the conversion) to convert your numbers to inches
+//return num * meters and it will give you younr answer
+  //I leanred I did not need the variable, just drop the '39.3701' in the function
+
+var meters = 1 * 39.3701;  
+
+function metersToInches (num) {
+    return num * meter;
+    //return num * 39.3701;
+  
+  }
+  metersToInches(0);
+  metersToInches(1);
+  metersToInches(1.5);
+  metersToInches(15.6);		
 
 
-
-function metersToInches () {
-
-
-}
-metersToInches();
-
-
-// ****************************************************************************
+//************************************************************************
 
 // [Challenge 2] - Loop n Times
 // Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times.
 
-//The function takes in an number (arg)....it should take in a string and num
-//The function spits out a string that number of times 
+//The function takes in an number
+//The function spits out "Hello World" the number of times from the number entered 
+
 
 //Game Plan
+//Create a function names loopThrough
 //Create a for loop
+    //if [i] is less than or equal to num, add 1 to it each time
+//console.log[i] to see if it worked
+//I consoled.log("Hello World") and what ever number is being inputed, it will go through the FoorLoop and see if its true, then print out "Hello World" that many times through the loop
+
+                function loopThrough (num) {
+                    for(let i = 1; i <= num; i++) { 
+                    //console.log(i);
+                    console.log("Hello World");
+                    }
+                return num;
+                } 
+                loopThrough(0);
+                loopThrough(1);
+                loopThrough(3);		
+                
+
+
+
