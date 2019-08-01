@@ -245,10 +245,32 @@ function common(a,b) {
 
 // Create an object with two key-value pairs.
 
+var alicia = {
+    hair: 'black',
+    age: 37
+  }
+ 
 // Log that object to the console.
+
+var alicia = {
+    hair: 'black',
+    age: 37
+  }
+  console.log(alicia);
 
 // Delete the first key-value pair in the object.
 
+var alicia = {
+    hair: 'black',
+    age: 37
+  }
+  delete alicia.hair;
+
 // Log that object to the console again. The first key-value pair should be gone.
 
-
+var alicia = {
+    hair: 'black',
+    age: 37
+  }
+  delete alicia.hair;
+  console.log(alicia);
