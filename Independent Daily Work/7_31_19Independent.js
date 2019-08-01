@@ -102,7 +102,30 @@ function metersToInches (num) {
                 } 
                 loopThrough(0);
                 loopThrough(1);
-                loopThrough(3);		
+                loopThrough(3);	
+                
+                
+// [Challenge 3] - Number sum
+//  Define a method called calculateSum to calculate the sum all the digits from 0 to an input number.
+                
+                    function calculateSum(num) {
+                        var results = 0;
+                        for (let i = 0; i <= num; i++) {
+                        results += i;
+                        }
+                        return results;
+                    }
+                    calculateSum(10);  
+
+//Function takes in a number
+//function spits out the sum of the number given (5) = 1+2+3+4+5=15
+
+//GamePlan
+// create an empty array that equals 0
+//create a for loop (if i lessthan or equal to the num given)
+//take results += i
+//each time the loop goes through it has a naumber and add's each time
+                
                 
 
 
