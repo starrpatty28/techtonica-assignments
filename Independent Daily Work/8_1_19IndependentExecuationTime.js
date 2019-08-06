@@ -132,6 +132,24 @@ var mysteryFunction4 = function(string) {
   }
 
 //What does the function do?
+  The function is counting all the e's in the string
+//What is the input size? Examples include the size of a list, the length of a string, or the integer passed into a function. This will be "n" in Big O notation.
+  The input I used was 'Bee'
+
+//Try to figure out the runtime -- O(1), O(log n), O(n), O(n log n), O(n^2), or O(2^n)
+   O(n)
+//When the input size doubles, what would happen to the time it takes to run?
+  yes difference
+ 
+  
+  // Problem #6
+
+  var mysteryFunction5 = function(array) {
+    array.sort();
+  }
+
+//What does the function do?
+  The function sorts an array
 
 //What is the input size? Examples include the size of a list, the length of a string, or the integer passed into a function. This will be "n" in Big O notation.
 
