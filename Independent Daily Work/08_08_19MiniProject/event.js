@@ -9,8 +9,25 @@ class Event {
        const ticket1 = new Ticket(typ, price);
        this.availableTickets.push(ticket1); 
     }
-  }
+    //Add a function to Event class to look for min and max price
+    searchTickets(minPrice, maxPrice) {
+        let results = '';
+        for(let i = 0; i<this.availableTickets.length; i++) {
+            const ticket = this.availableTickets[i];
+            //console.log(ticket.price);
+            if (minPrice <= ticket.price && ticket.price <= maxPrice ) {
+                results += ` ${ticket.type}`; 
+            }  
+        }
+        //if statement for if the ticket price is not in the range 
+        if(!results) {
+            return 'No tickets available';
+        }
+        return results;
+    }
+  }// close class Event
 
+//Ticket class helps get the price, search ect to check conditions 
 class Ticket {
     constructor(type, price) {
       this.type = type;
@@ -40,18 +57,22 @@ console.log(event_obj1);
 
 event_obj2.addAvailableTickets("General Admission", 25)
 event_obj2.addAvailableTickets("Floor Seating", 80)
+console.log(event_obj2);
+
 
 event_obj3.addAvailableTickets("Orchestra", 300)
 event_obj3.addAvailableTickets("Mezzanine", 200)
 event_obj3.addAvailableTickets("Balcony", 100)
-console.log(event_obj2);
+console.log(event_obj3);
 
+// event_obj3.searchTickets(0, 300);
+// console.log(event_obj3.searchTickets(0, 300));
 
 
 $(document).ready(function() {
     let html = "";
     $.each(event_array, function(index, item) {
-      html+= `<li>${item.name} - ${item.description}</li>`;
+      html+= `<li>${item.name} - ${item.description} - ${item.searchTickets(0,300) } </li>`;
     });
     // insert final html into #event...
     $("#event").html(html);
@@ -61,12 +82,3 @@ $(document).ready(function() {
 
 // .html() is used to return the HTML code from jQuery to the target element of the HTML page.
 // event is the target element in the below code.
-
-
-//create another class, "Ticket" with two properties on it, and within your function definition, you will need to modify your availableTickets property.
-
-
-
-// Now that you have the basic class working, let's add a useful function to your class. Add a function on the class called addAvailableTickets to create a ticket type, that will accept two parameters. The first parameter will be the ticket type, and the second parameter will be the price of the ticket. The method should look like this when it is called:
-
-// Hint: You might want to create another class, "Ticket" with two properties on it, and within your function definition, you will need to modify your availableTickets property.
