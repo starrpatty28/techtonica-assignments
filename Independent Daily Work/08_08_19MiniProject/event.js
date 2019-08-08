@@ -18,3 +18,19 @@ class Event {
 
  //pushing multiple objects to an array at once
 event_array.push(event_obj1, event_obj2, event_obj3);
+
+console.log(event_array);
+
+$(document).ready(function() {
+    let html = "";
+    $.each(event_array, function(index, item) {
+      html+= `<li>${item.name} - ${item.description}</li>`;
+    });
+    // insert final html into #event...
+    $("#event").html(html);
+  });
+
+// .each() is used to iterate through the array of objects. Above code represents the syntax to iterate using .each()
+
+// .html() is used to return the HTML code from jQuery to the target element of the HTML page.
+// event is the target element in the below code.
