@@ -49,7 +49,7 @@ class EventRecommender {
     this.events = this.events.filter( events => events.name != name );
      }
 
-    filter(minPrice, maxPrice){
+    filter(){
     }
 }
 //Adding an object for the 'Rec' class
@@ -85,10 +85,9 @@ class EventRecommender {
 
  // Delete a Event from the System
     event_rec.deleteEvent('WuTang_concert');
-    console.log(event_rec);
+ 
 
-
-//Save a user favorite event
+//Save users favorite event
     user_Alicia.addFavoriteEvents(event1)
     user_Dominique.addFavoriteEvents(event2);
     user_Kamiah.addFavoriteEvents(event3);
@@ -96,10 +95,10 @@ class EventRecommender {
     console.log(user_Dominique);
     console.log(user_Kamiah);
 
-
-
-
 // Filter:
+
+   console.log(event_rec);
+
 
 // Note: You can use two separate filter functions or one if you'd like an extra challenge :)
 
