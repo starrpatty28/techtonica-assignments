@@ -98,6 +98,8 @@ class EventRecommender {
 
 console.log(event_rec);
 
+module.exports = EventRecommender;
+
 
 
 
