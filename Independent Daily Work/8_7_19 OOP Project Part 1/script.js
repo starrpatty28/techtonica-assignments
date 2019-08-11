@@ -1,11 +1,12 @@
 class Users {
-    constructor(name) {
+    constructor(name, userEvents) {
      
     this.name = name;
     this.userEvents = [];   
     }
+ // saveUserEvent(users, event){
     addFavoriteEvents(chosenEvent) {
-        this.userEvents.push(chosenEvent);
+    this.userEvents.push(chosenEvent);
      }
 }
 
@@ -18,7 +19,7 @@ class Events {
 }
 
 class EventRecommender {
-    constructor() {
+    constructor(events, users) {
 
         this.events = [];
         this.users = [];
@@ -35,21 +36,18 @@ class EventRecommender {
         this.users.push(new_users);
     }
 
-    // saveUserEvent(users, event){
-    // //Allow users to save events to a personal Events array.
-    // }
-
     deleteUser(name) {
     // Deletes a User from the system
-    this.users = this.users.filter( users => users.name != name );
+    this.users = this.users.filter( users => users.name !== name );
     }
    
     deleteEvent(name) {
     // Deletes the Event from the system
-    this.events = this.events.filter( events => events.name != name );
+    this.events = this.events.filter( events => events.name !== name );
      }
 
     filter(){
+        
     }
 }
 //Adding an object for the 'Rec' class
@@ -97,8 +95,9 @@ class EventRecommender {
 
 // Filter:
 
-   console.log(event_rec);
+
+console.log(event_rec);
 
 
-// Note: You can use two separate filter functions or one if you'd like an extra challenge :)
+
 
