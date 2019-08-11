@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Add/Delete Concert & User</title>
 <style type="text/css">
     body {
@@ -31,8 +32,8 @@
     $(document).ready(function(){
         $(".add-row").click(function(){
             var name = $("#name").val();
-            var email = $("#Concert").val();
-            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>";
+            var Concert = $("#Concert").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + Concert + "</td></tr>";
             $("table tbody").append(markup);
         });
         
