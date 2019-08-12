@@ -16,6 +16,8 @@
 <meta name="language" content="English">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Add/Delete Concert & User</title>
+
+<!--CSS for my Add/Delete User Page-->
 <style type="text/css">
     body {
     background-color: rgba(164, 179, 184, 0.87);
@@ -41,6 +43,8 @@
 </style>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
+
+        // Table to add user and concert
     $(document).ready(function(){
         $(".add-row").click(function(){
             var name = $("#name").val();
@@ -63,6 +67,7 @@
 <body>
     <h1>Event Recommender Add User & Concert</h1>
     <form>
+<!--Input boxes to add Name and Concert Name-->
         <input type="text" id="name" placeholder="Name">
         <input type="text" id="Concert" placeholder="Concert/Artist">
     	<input type="button" class="add-row" value="Add Row">
