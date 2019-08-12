@@ -42,35 +42,15 @@
     }
 </style>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-
-        // Table to add user and concert
-    $(document).ready(function(){
-        $(".add-row").click(function(){
-            var name = $("#name").val();
-            var Concert = $("#Concert").val();
-            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + Concert + "</td></tr>";
-            $("table tbody").append(markup);
-        });
-        
-        // Find and remove selected table rows
-        $(".delete-row").click(function(){
-            $("table tbody").find('input[name="record"]').each(function(){
-            	if($(this).is(":checked")){
-                    $(this).parents("tr").remove();
-                }
-            });
-        });
-    });    
-</script>
 </head>
+
 <body>
-    <h1>Event Recommender Add User & Concert</h1>
+    <h1>Event Recommender Add User & Interest</h1>
     <form>
-<!--Input boxes to add Name and Concert Name-->
-        <input type="text" id="name" placeholder="Name">
-        <input type="text" id="Concert" placeholder="Concert/Artist">
-    	<input type="button" class="add-row" value="Add Row">
+        <input type="text" id="Name" placeholder="Name">
+        <input type="text" id="Concert" placeholder="Concert">
+      <input type="button" id="addBtn" class="myButton" value="Add Name and Concert">
+      <br<br><br>
     </form>
     <table>
         <thead>
@@ -80,7 +60,8 @@
                 <th>Concert</th>
             </tr>
         </thead>
-        <tbody>
+        <br<br><br>
+        <tbody id="table-body">
             <tr>
                 <td><input type="checkbox" name="record"></td>
                 <td>Alicia Livingston</td>
@@ -88,6 +69,35 @@
             </tr>
         </tbody>
     </table>
-    <button type="button" class="delete-row">Delete Row</button>
+    <button type="button" id="deleteBtn" class="myButton">Delete Name and Concert</button>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        // Find and remove selected table rows
+        $("#deletetn").click(function(){
+            $("table tbody").find('input[name="record"]').each(function(){
+            	if($(this).is(":checked")){
+                    $(this).parents("tr").remove();
+                }
+            });
+        });
+        // Table to add user and concert
+        $('#addBtn').click( e => {
+          var name = $("#Name").val();
+            var event = $("#Concert").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + event + "</td></tr>";
+            $('#table-body').append(markup);
+          
+            //add object user 
+            let user = new Users(name,event);
+            event_rec.addUser(user);
+            console.log('event_rec.users after add = ', event_rec.users);
+        });
+        console.log('event_rec.users = ', event_rec.users);    
+    });    
+</script>
 </body> 
-</html>                            
+</html>     
+
+            
