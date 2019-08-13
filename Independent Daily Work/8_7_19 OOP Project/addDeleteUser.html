@@ -15,6 +15,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Add/Delete Concert & User</title>
 
 <!--CSS for my Add/Delete User Page-->
@@ -71,11 +72,12 @@
     </table>
     <button type="button" id="deleteBtn" class="myButton">Delete Name and Concert</button>
     <script src="./script.js"></script>
+    
     <script type="text/javascript">
 
     $(document).ready(function(){
-        // Find and remove selected table rows
-        $("#deletetn").click(function(){
+        // Find and remove selected table rows 
+        $("#deleteBtn").click(function(){
             $("table tbody").find('input[name="record"]').each(function(){
             	if($(this).is(":checked")){
                     $(this).parents("tr").remove();
