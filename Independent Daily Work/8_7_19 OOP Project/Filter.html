@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Concert Filter</title>
-</head>
-<body>
-    
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Concert Filter</title>
+   </head>
+   <body>
+      <h2>Filterable Table</h2>
+      <p>Type something in the input field to search the table for first names, last names or emails:</p>
+      <input id="myInput" type="text" placeholder="Search..">
+      <br><br> 
+      <table>
+         <thead>
+            <tr>
+               <th>Firstname</th>
+               <th>Lastname</th>
+               <th>Email</th>
+            </tr>
+         </thead>
+         <tbody id="myTable">
+            <tr>
+               <td>John</td>
+               <td>Doe</td>
+               <td>john@example.com</td>
+            </tr>
+            <tr>
+               <td>Mary</td>
+               <td>Moe</td>
+               <td>mary@mail.com</td>
+            </tr>
+            <tr>
+               <td>July</td>
+               <td>Dooley</td>
+               <td>july@greatstuff.com</td>
+            </tr>
+            <tr>
+               <td>Anja</td>
+               <td>Ravendale</td>
+               <td>a_r@test.com</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
 </html>
