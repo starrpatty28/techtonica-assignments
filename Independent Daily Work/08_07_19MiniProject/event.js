@@ -82,3 +82,5 @@ $(document).ready(function() {
 
 // .html() is used to return the HTML code from jQuery to the target element of the HTML page.
 // event is the target element in the below code.
+
+//find an event button (events pop up)
