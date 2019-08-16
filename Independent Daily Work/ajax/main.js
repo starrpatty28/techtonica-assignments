@@ -16,6 +16,9 @@ function addToPokedex(event) {
 
   let list = document.getElementById('pokemon-list');
   list.appendChild(pokemonContainer);
+
+  let loadingIndicator = createLoadingIndicator();
+  pokemonContainer.appendChild(loadingIndicator); 
 }
 
 // // request method and the URL for our reques example
@@ -35,18 +38,7 @@ function fetchPokemon(event) {
     if(request.readyState === 4) {
       if(request.status === 200) {
         let response = JSON.parse(request.responseText);
-        //image path
-        let path = response.sprites.front_default;
-        let name = response.name;
-        //image tag
-        let image = document.createElement('img');
-        image.src = path;
-        image.alt = name;
-
-        //add image object to DOM
-        let pokemonListItem = document.getElementById(name.toLowerCase());
-        pokemonListItem.appendChild(image);
-        
+        placePokemonImage(response) 
       } else {
         console.log('There was a problem with the request');
       }
@@ -54,6 +46,34 @@ function fetchPokemon(event) {
   }; 
   request.send();
 
+}
+
+function placePokemonImage(pokemonData) {
+   removeLoadingIndicator();
+  //image path
+  let path = pokemonData.sprites.front_default;
+  let name = pokemonData.name;
+  //image tag
+  let image = document.createElement('img');
+  image.src = path;
+  image.alt = name;
+  //add image object to DOM
+  let pokemonListItem = document.getElementById(name.toLowerCase());
+  pokemonListItem.appendChild(image); 
+}
+
+//loading indicator functio (this will show while loading)
+function createLoadingIndicator() {
+  let loading = document.createElement('p')
+  loading.id = 'loading';
+  loading.innerHTML = 'Loading...';
+  return loading;
+}
+
+//removing the loading message
+function removeLoadingIndicator() {
+let loading = document.getElementById('loading');
+  loading.remove();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
