@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Companion - Forms</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <form id="pokedex">
+      <p>Pokemon name:</p>
+      <input type="text" name="pokemon" />
+
+      <p>Description:</p>
+      <textarea name="description" rows="10" cols="30"></textarea>
+
+      <br />
+      <button id="submitBtn" type="submit">Add to Pokedex</button>
+    </form>
+
+    <h2>Pokemon:</h2>
+
+    <div id="pokemon-list"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
