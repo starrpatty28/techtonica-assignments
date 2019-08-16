@@ -21,15 +21,10 @@ function addToPokedex(event) {
   pokemonContainer.appendChild(loadingIndicator); 
 }
 
-// // request method and the URL for our reques example
-// let httpRequest = new XMLHttpRequest();
-// httpRequest.open('GET', 'https://pokeapi.co/api/v2/pokemon/${pokemon}/');
-// httpRequest.send();
-
-
 function fetchPokemon(event) {
   let pokemon = event.target.pokemon.value.toLowerCase();
 
+  //request method and the URL
   let request = new XMLHttpRequest();
   let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}/`;
   request.open('GET', url);
@@ -62,7 +57,7 @@ function placePokemonImage(pokemonData) {
   pokemonListItem.appendChild(image); 
 }
 
-//loading indicator functio (this will show while loading)
+//loading indicator function (this will show while loading)
 function createLoadingIndicator() {
   let loading = document.createElement('p')
   loading.id = 'loading';
