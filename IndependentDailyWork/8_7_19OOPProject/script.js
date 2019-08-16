@@ -99,7 +99,7 @@ class EventRecommender {
 
 console.log(event_rec);
 
-//module.exports = EventRecommender;
+module.exports = EventRecommender;
 
 
 
