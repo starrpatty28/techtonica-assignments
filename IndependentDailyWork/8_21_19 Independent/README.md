@@ -13,5 +13,5 @@
 - restaurants where the chef has worked
 - chef's favorite ingredient
 
-![ERD Database Modeling](/ERB.png)
+![ERB Database Modeling](./ERB.png)
 
