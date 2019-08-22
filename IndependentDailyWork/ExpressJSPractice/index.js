@@ -1,31 +1,34 @@
 const express = require("express");
 const logger = require("./middleware/logger");
 const path = require("path");
-const members = require("./Members");
+const exphbs = require('express-handlebars');
+const members = require('./Members');
 
 const app = express();
 
 // //Initialize the MiddleWare
 // app.use(logger);
 
-//Gets All Members
-app.get("/api/members", (req, res) => res.json(members));
+//Handlebars Middleware
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
-//Get Single Member
-app.get("/api/members/:id", (req, res) => {
-  const found = members.some(member => member.id === parseInt(req.params.id));
+//Body Parser Middleware
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
-  if(found) {
+//Homepage route
+app.get('/', (req, res) => res.render('index', {
+  title: 'Member App',
+  members 
+}));
 
- res.json(members.filter(member => member.id === parseInt(req.params.id)));
-  } else { 
-    res.status(400).json({ msg: `No member with the id of ${req.params.id}`});
-  }
-
-});
 
 //Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+
+//Members API Routes
+app.use('/api/members', require('./routes/api/members'));
 
 const PORT = process.env.PORT || 5000;
 
