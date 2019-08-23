@@ -3,6 +3,11 @@ const logger = require("./middleware/logger");
 const path = require("path");
 const exphbs = require('express-handlebars');
 const members = require('./Members');
+const { I_LOVE } = require('./config');
+
+console.log("I love ", I_LOVE);
+
+
 
 const app = express();
 
