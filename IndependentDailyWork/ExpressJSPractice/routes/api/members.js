@@ -34,8 +34,8 @@ router.post('/', (req, res) => {
   }
 
   members.push(newMember);
-  // res.json(members);
-  ReadableStream.redirect('/');
+  res.json(members); 
+  // res.redirect('/');  redirects to main page
 });
 
 //update Member
