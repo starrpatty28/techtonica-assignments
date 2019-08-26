@@ -11,7 +11,12 @@ app.use(
         extended: true,
     })
 )
-
+//Tell the route to look for GET request on root URL and return some JSON
 app.get('/', (request, response) => {
     response.json({ info: 'Node.js, and Postgres API'})
+})
+
+//Set the app to listen on the port we set
+app.listen(port, () => {
+    console.log(`App running on port ${port}.`)
 })
