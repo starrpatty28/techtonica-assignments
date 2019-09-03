@@ -1,0 +1,3 @@
+## EVENTONICA
+A CLI APP.
+
