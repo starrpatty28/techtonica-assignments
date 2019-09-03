@@ -3,24 +3,24 @@ A CLI APP
 
 ## CLI Images
 
-![Welcome](Eventonica1/Eventful-API-test-page/EventonicaImages/Welcome.png)
+![Welcome](/Eventonicalmages/Welcome.png)
 
-![Sentence](/EventonicaImages/Sentence.png)
+![Sentence](/Eventonicalmages/Sentence.png)
 
-![Event](/EventonicaImages/Event.png)
+![Event](/Eventonicalmages/Event.png)
 
-![Exit](/EventonicaImages/Exit.png)
+![Exit](/Eventonicalmages/Exit.png)
 
 ## Postgres Images
 
-![Postgres Events](/EventonicaImages/Events.png)
+![Postgres Events](/Eventonicalmages/Events.png)
 
-![Postgres Users](/EventonicaImages/Users.png)
+![Postgres Users](/Eventonicalmages/Users.png)
 
 ## Eventonica API Images
 Postman GET
 
-![Postmanit](/EventonicaImages/Postman.png)
+![Postmanit](/Eventonicalmages/Postman.png)
 
 
 ## Built With:
