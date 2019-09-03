@@ -20,7 +20,7 @@ A CLI APP
 ## Eventonica API Images
 Postman GET
 
-![Exit](/EventonicaImages/Exit.png)
+![Postmanit](/EventonicaImages/Postman.png)
 
 
 ## Built With:
