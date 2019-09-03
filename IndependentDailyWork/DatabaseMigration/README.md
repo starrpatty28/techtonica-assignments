@@ -7,7 +7,7 @@ Here is the link to the assignment [Link](https://github.com/Techtonica/curricul
 Create your own table with at least four columns. One of the columns should be type VARCHAR(5). Populate the table with three entries.
 
 
-![name]/name.png) 
+![name](/images/name.png) 
 
 ![Name & Email](/images/nameEmail.png)  
 
