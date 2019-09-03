@@ -3,7 +3,7 @@ A CLI APP
 
 ## CLI Images
 
-![Welcome](/EventonicaImages/Welcome.png)
+![Welcome](/Eventonica1/Eventful-API-test-page/EventonicaImages/Welcome.png)
 
 ![Sentence](/EventonicaImages/Sentence.png)
 
