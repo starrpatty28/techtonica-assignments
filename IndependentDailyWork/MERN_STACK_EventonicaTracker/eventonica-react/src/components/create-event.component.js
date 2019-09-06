@@ -1,4 +1,5 @@
 import React, { Component} from 'react'
+import axios from 'axios';
 
 export default class CreateEvents extends Component {
   constructor(props) {
@@ -19,10 +20,18 @@ export default class CreateEvents extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      users: ['test user'],
-      username: 'test user'
-    }) 
+    axios.get('http://localhost:6000/users/')
+    .then(response => {
+      if(response.data.length > 0) {
+        this.setState({
+          users: response.data.map(user => user.username),
+          username: response.data[0].username
+        })
+      }
+    })
+    // .catch((error) => {
+    //   console.log(error);
+    // })
   }
 
 onChangeUsername(e) {
@@ -47,6 +56,9 @@ onSubmit(e) {
   }
 
   console.log(event)
+
+  axios.post('http://localhost:6000/events/add', event)
+  .then(res => console.log(res.data));
 
  // window.location = '/'
 
@@ -80,16 +92,13 @@ onSubmit(e) {
               required
               className="form-control"
               value={this.state.event}
-              onChange={this.onChangeEvent}
-              />
+              onChange={this.onChangeEvent}/>
         </div>
         <div className="form-group">
           <input type="submit" value="Create Event Log" className="btn btn-primary" />
         </div>
        </form>
-     </div> 
-
-     
+     </div>  
     )
   }
 } 
