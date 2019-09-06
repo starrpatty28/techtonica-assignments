@@ -9,8 +9,6 @@ export default class CreateEvents extends Component {
     this.onChangeEvent = this.onChangeEvent.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
-
-
     //state is how you create variables in react
     this.state = {
       username: '',
@@ -20,7 +18,7 @@ export default class CreateEvents extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:6000/users/')
+    axios.get('http://localhost:5000/users/')
     .then(response => {
       if(response.data.length > 0) {
         this.setState({
@@ -57,7 +55,7 @@ onSubmit(e) {
 
   console.log(event)
 
-  axios.post('http://localhost:6000/events/add', event)
+  axios.post('http://localhost:5000/events/add', event)
   .then(res => console.log(res.data));
 
  // window.location = '/'
