@@ -22,7 +22,7 @@ function App() {
       <Route path="/user" component={CreateUser} />
       </div>
     </Router>
-  );
+   );
 }
 
 export default App;

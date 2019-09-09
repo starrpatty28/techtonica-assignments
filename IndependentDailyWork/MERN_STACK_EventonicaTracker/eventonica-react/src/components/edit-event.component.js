@@ -41,9 +41,9 @@ export default class EditEvents extends Component {
         })
       }
     })
-    .catch((error) => {
-      console.log(error);
-    })
+    // .catch((error) => {
+    //   console.log(error);
+    // })
   }
 
 onChangeUsername(e) {
@@ -69,7 +69,7 @@ onSubmit(e) {
 
   console.log(event)
 
-  axios.post('http://localhost:5000/events/update'+this.props.match.params.id, event)
+  axios.post('http://localhost:5000/events/update/'+this.props.match.params.id, event)
   .then(res => console.log(res.data));
 
  // window.location = '/'
