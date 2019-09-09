@@ -34,6 +34,9 @@ export default class CreateUser extends Component {
     this.setState({
       username: ''
     })
+
+    alert('You event and user has been added!')
+
   }
 
   render() {

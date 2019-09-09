@@ -61,6 +61,7 @@ export default class CreateEvents extends Component {
   onSubmit(e) {
     console.log("alert", e.target);
     e.preventDefault();
+    e.target.reset();
 
     const event = {
       username: this.state.username,
@@ -74,6 +75,8 @@ export default class CreateEvents extends Component {
       .then(res => console.log(res.data));
 
     // window.location = '/'
+
+    alert('You event and user has been added!')
   }
 
   render() {
