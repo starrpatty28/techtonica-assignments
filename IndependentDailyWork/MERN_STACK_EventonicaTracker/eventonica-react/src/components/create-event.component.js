@@ -22,7 +22,7 @@ export default class CreateEvents extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://app.ticketmaster.com/discovery/v2/events?apikey=foMLuJ0DCrZJ24dIKYTLbDwRaWCw7BCR&keyword=music&size=6"
+        "https://app.ticketmaster.com/discovery/v2/events?apikey=foMLuJ0DCrZJ24dIKYTLbDwRaWCw7BCR&keyword=music"
       )
       .then(response => {
         console.log(response.data._embedded.events);
