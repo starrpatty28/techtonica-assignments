@@ -73,6 +73,8 @@ onSubmit(e) {
   .then(res => console.log(res.data));
 
  // window.location = '/'
+ 
+ alert('Your user')
 
 }
 

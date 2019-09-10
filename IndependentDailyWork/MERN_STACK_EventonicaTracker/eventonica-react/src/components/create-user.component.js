@@ -35,7 +35,7 @@ export default class CreateUser extends Component {
       username: ''
     })
 
-    alert('You event and user has been added!')
+    alert('You user has been added!')
 
   }
 
