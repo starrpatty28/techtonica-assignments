@@ -32,7 +32,7 @@ export default class EventList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/events/")
+      .get("/events")
       .then(response => {
         this.setState({ event: response.data });
       })
@@ -42,7 +42,7 @@ export default class EventList extends Component {
   }
 
   deleteEvent(id) {
-    axios.delete("http://localhost:5000/events/" + id).then(response => {
+    axios.delete("/events/" + id).then(response => {
       console.log(response.data);
     });
 
