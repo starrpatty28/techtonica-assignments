@@ -15,3 +15,7 @@ click [here](https://eventonica-recat-api.herokuapp.com/)
 * [Bootstrap](https://getbootstrap.com/) 
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [cors](https://www.npmjs.com/package/cors) 
+
+# APP IMAGES
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
