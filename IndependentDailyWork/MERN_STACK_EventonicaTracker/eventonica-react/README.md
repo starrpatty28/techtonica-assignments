@@ -18,4 +18,4 @@ click [here](https://eventonica-recat-api.herokuapp.com/)
 
 # APP IMAGES
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://github.com/starrpatty28/techtonica-assignments/tree/master/IndependentDailyWork/MERN_STACK_EventonicaTracker/eventonica-react/app-images/addUser1.png)
