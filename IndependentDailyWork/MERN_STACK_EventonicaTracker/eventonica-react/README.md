@@ -7,7 +7,7 @@ click [here](https://eventonica-recat-api.herokuapp.com/)
 
 # BUILT WITH
 
-* [Express.js](https://expressjs.com/
+* [Express.js](https://expressjs.com/)
 * [React](https://reactjs.org/) 
 * [MongoDB](https://www.mongodb.com)
 * [Mongoose](https://mongoosejs.com/) 
