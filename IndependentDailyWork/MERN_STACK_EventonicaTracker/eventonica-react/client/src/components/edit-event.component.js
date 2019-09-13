@@ -21,7 +21,7 @@ export default class EditEvents extends Component {
 
   componentDidMount() {
 
-    axios.get('/events/'+this.props.match.params.id)
+    axios.get('http://localhost:5000/events/'+this.props.match.params.id)
     .then(response => {
       this.setState({
         username: response.data.username,
@@ -33,7 +33,7 @@ export default class EditEvents extends Component {
     })
 
 
-    axios.get('/users/')
+    axios.get('http://localhost:5000/users/')
     .then(response => {
       if(response.data.length > 0) {
         this.setState({
@@ -69,7 +69,7 @@ onSubmit(e) {
 
   console.log(event)
 
-  axios.post('/events/update/'+this.props.match.params.id, event)
+  axios.post('http://localhost:5000/events/update/'+this.props.match.params.id, event)
   .then(res => console.log(res.data));
 
  // window.location = '/'
