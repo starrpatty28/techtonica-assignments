@@ -34,11 +34,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 # APP IMAGES
 
 ![AddUser](./app-images/addUser1.png)
+
 ![UserAdded](./app-images/userAdded2.png) 
+
 ![CreateEvent3](./app-images/createEvent3.png) 
+
 ![CreateEvent4](./app-images/createEvent4.png) 
+
 ![CreateEvent5](./app-images/createEvent5.png) 
+
 ![EventAdded6](./app-images/eventAdded6.png) 
+
 ![EventAdded7](./app-images/eventAdded7.png) 
 
 # AUTHOR
