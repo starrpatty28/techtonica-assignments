@@ -6,5 +6,6 @@ _Stack is a **Linear Data Structure** which follows a particular order in which 
 
 _The advanatges of **Stacks** are it provides a way for users to access different pieces of contiguous data in a Last In First Out manner. Stacks are easy to use and gurantee O(1) runtime for these 3 operations(E-Peek, E-Pop, E-Element)._ 
 
+![Stacks](./images/stack.png)
 
 ## Queues
