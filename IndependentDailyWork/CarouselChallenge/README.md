@@ -24,6 +24,6 @@ Host your beautiful creation on GitHub Pages so we can interact with it. Push yo
 
 Please include a README file that briefly describes your thought process to completing assignment. Send your Program Manager an email with the URL of your GitHub repository. The final product should be publically viewable at <repo name>.github.io and should be fully functional on mobile and desktop browsers.
 
-### Finished Product
+## Finished Product
 
-####Clink [Here](https://alicia-carousel-challenge.netlify.com)
+#### Clink [Here](https://alicia-carousel-challenge.netlify.com)
