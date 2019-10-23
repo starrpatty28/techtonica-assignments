@@ -2,7 +2,7 @@
 
 Made for the [eventonica-react](https://github.com/Techtonica/curriculum/blob/master/projects/eventonica-react.md) assignment and the [eventonica-assessment](https://github.com/Techtonica/curriculum/blob/master/projects/react-assessment.md)
 
-click [here](https://eventonica-recat-api.herokuapp.com/)
+## Click [here](https://eventonica-recat-api.herokuapp.com/)
  for live site
 
 # BUILT WITH
